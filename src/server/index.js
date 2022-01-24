@@ -9,7 +9,7 @@ const fetch = (...args) =>
     import("node-fetch").then(({ default: fetch }) => fetch(...args));
 
 const app = express();
-const port = 8080;
+const port = 5000;
 app.use(express.json())
 app.use(express.static('dist'))
 
