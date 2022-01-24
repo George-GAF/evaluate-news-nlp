@@ -5,7 +5,7 @@ function handleSubmit(event) {
     let url = document.getElementById('url').value
     const result = document.getElementById("results")
 
-    fetch('http://localhost:8080/', {
+    fetch('http://localhost:8000/', {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url: url }),
